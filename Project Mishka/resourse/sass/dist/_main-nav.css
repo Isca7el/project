@@ -1,0 +1,110 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main-nav .main-nav__logo {
+  padding: 20px;
+}
+.main-nav .main-nav__list {
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav .main-nav__link {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 29px;
+  padding-bottom: 30px;
+  max-width: 260px;
+}
+.main-nav .main-nav__item {
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+}
+.main-nav .promo-list,
+.main-nav .delivery {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-nav__buttom--closed ~ .main-nav__list .main-nav__item {
+    display: none;
+  }
+
+  .main-nav__buttom--nojs ~ .main-nav__list .main-nav__item {
+    display: block;
+  }
+
+  .main-nav__buttom {
+    position: absolute;
+    display: block;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+  }
+  .main-nav__buttom--opened {
+    top: 20px;
+    width: 41px;
+    height: 40px;
+    background: url("/resourse/img/menu-open.svg") no-repeat 50% 50%;
+  }
+  .main-nav__buttom--closed {
+    top: 22px;
+    width: 40px;
+    height: 34px;
+    background: url("/resourse/img/menu-close.svg") no-repeat 50% 50%;
+  }
+  .main-nav__buttom--closed--nojs {
+    display: none;
+  }
+}
+@media (min-width: 720px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .main-nav .site-list,
+.main-nav .delivery,
+.main-nav .panel-list {
+    display: block;
+  }
+  .main-nav .main-nav__buttom {
+    display: none;
+  }
+  .main-nav .site-list {
+    order: 3;
+  }
+  .main-nav .panel-list {
+    order: 2;
+  }
+  .main-nav .delivery {
+    order: 4;
+  }
+}
+@media (min-width: 1150px) {
+  .main-nav {
+    display: flex;
+  }
+  .main-nav .main-nav__link {
+    order: 2;
+  }
+  .main-nav .site-list {
+    order: 0;
+  }
+  .main-nav .panel-list {
+    order: 3;
+  }
+  .main-nav .delivery {
+    order: 5;
+  }
+  .main-nav .promo-list {
+    display: block;
+    order: 4;
+  }
+}

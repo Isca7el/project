@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/Open_Sans/" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resourse/css/style.css">
+    <title>Mishka</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="page-header__wrapper">
+            <nav class="main-nav open-nav close-nav toogle-nav">
+                <a class="main-nav__link--logo" href="mobile_index.html" href="index.html">
+                    <picture>
+                    <source media="(min-width: 1150px)" srcset="resourse/img/mishka-logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="resourse/img/mishka-logo-tablet.svg">
+                    <img class="main-nav__logo" src="resourse/img/mobile-mishka-logo.svg" width="86"
+                        height="35" alt="Мишка">
+                    </picture>
+                </a>
+                    <button class="main-nav__buttom main-nav__buttom--closed main-nav__buttom--nojs" type="button"></button>
+                <ul class="main-nav__list site-list">
+                    <li class="main-nav__item site-list__item">
+                        <a class="main-nav__link main-nav__link--catalog" href="#">Каталог товаров</a>
+                    </li>
+                    <li class="main-nav__item site-list__item">
+                        <a class="main-nav__link main-nav__link--knitting" href="#">Вязание на заказ</a>
+                    </li>
+                </ul>
+                <ul class="main-nav__list panel-list">
+                    <li class="main-nav__item panel-list__item">
+                        <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
+                    </li>
+                    <li class="main-nav__item panel-list__item">
+                        <a class="main-nav__link main-nav__link--basket" href="#">Корзина: пока пуста</a>
+                    </li>
+                </ul>
+                <ul class="main-nav__list promo-list">
+                    <li class="main-nav__item promo-list__item">
+                        <a class="main-nav__link main-nav__link--news" href="#">Новые поступления</a>
+                    </li>
+                    <li class="main-nav__item promo-list__item">
+                        <a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a>
+                    </li>
+                </ul>
+                <p class="main-nav__delivery delivery">Бесплатная доставка по России</p>
+            </nav>
+        </div>
+    </header>
+    <main clas="page-main">
+        <section class="assortiment">
+            <h1 class="assortiment__title">Милые штуки ручной работы для дома</h1>
+            <ul class="assortiment__list assortment-list">
+                <li class="assortiment-list__item">
+                    <a href="#">Предметы интерьера</a>
+                </li>
+                <li class="assortiment-list__item">
+                    <a href="#">Детские игрушки</a>
+                </li>
+            </ul>
+        </section>
+        <section class="product-weak">
+            <h2 class="product-weak__title">Вязаные корзинки</h2>
+            <p class="product-weak__text">Товар недели</p>
+            <p class="product-weak__discription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
+                и трех размерах.</p>
+            <table class="product-weak__list">
+                <tr>
+                    <td class="product-weak__value">Цвет:</td>
+                    <td class="product-weak__field">"Тиффани"/серый</td>
+                </tr>
+                <tr>
+                    <td class="product-weak__value">Диаметр:</td>
+                    <td class="product-weak__field">25 см</td>
+                </tr>
+                <tr>
+                    <td class="product-weak__value">Высота:</td>
+                    <td class="product-weak__field">15 см</td>
+                </tr>
+            </table>
+            <img class="product-weak__image" src="images/product-weak__image.jpg" width="260" height="315">
+
+            <p class="product-weak__price">Цена:990 руб.</p>
+            <button class="product-weak__button button" type="button">Заказать</button>
+        </section>
+        <section class="about-us">
+            <h2 class="about-us__title">Коротко о нас:</h2>
+            <ul class="about-us__list">
+                <li class="about-us__item about-us__item--ecologic">
+                    <p class="about-us__discription">Экологически чистые материалы</p>
+                </li>
+                <li class="about-us__item about-us__item--style">
+                    <p class="about-us__discription">Скандинавский стиль по российской цене</p>
+                </li>
+                <li class="about-us__item about-us__item--social">
+                    <p class="about-us__discription">Увеличивает лайки на фотографиях</p>
+                </li>
+                <li class="about-us__item about-us__item--handmade">
+                    <p class="about-us__discription">Связано вручную с любовью и умилением</p>
+                </li>
+                <li class="about-us__item about-us__item--our">
+                    <p class="about-us__discription">Поддержка отечественного производителя</p>
+                </li>
+                <li class="about-us__item about-us__item--gift-packing">
+                    <p class="about-us__discription">Поставляется в подарочной упаковке</p>
+                </li>
+            </ul>
+        </section>
+        <section class="reviwes">
+            <h2 class="reviwes__title">Отзывы</h2>
+            <div class="reviwes__list">
+                <p class="reviwes__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                    лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                    фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <p class="reviwes__autor-name">Анастасия Красильникова</p>
+                <p class="reviwes__autor-contact">@misssssiskras</p>
+            </div>
+            <div class="reviwes-slider">
+                <button class="slider-previous">Назад</button>
+                <button class="slider-next">Вперед</button>
+            </div>
+            <button class="revies-button button" type="button">Написать</button>
+        </section>
+        <section class="contacts">
+            <h2 class="contacts__title">Коротко о нас:</h2>
+            <table class="contacts__list">
+                <tr>
+                    <td class="contacts__value">email:</td>
+                    <td class="contacts__field">info@mimimishkashop.ru</td>
+                </tr>
+                <tr>
+                    <td class="contacts__value">адрес</td>
+                    <td class="contacts__field">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</td>
+                </tr>
+            </table>
+            <img class="contacts-map" src="">
+            <button class="contacts-button button" type="button">Напишите нам</button>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__contacts social">
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link social-link--instagramm" href="#">Мы в инстаграме</a>
+                    <a class="social__link social-link--facebook" href="#">Мы в фейсбуке</a>
+                    <a class="social__link social-link--twiter" href="#">Мы в твитере</a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copuright__link" href="">Разработчик</a>
+        </div>
+    </footer>
+
+    <script src="resourse/js/script.js"></script>
+</body>
+
+</html>

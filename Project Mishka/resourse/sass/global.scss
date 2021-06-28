@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-width: 320px;
+    min-height: 100%;
+    font-family: "Open Sans",
+      "Arial",
+      sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #000000;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
